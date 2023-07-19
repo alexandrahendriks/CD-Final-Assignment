@@ -13,6 +13,10 @@ def index():
 def cow():
     return 'MOoooOo!'
 
+@app.route('/final')
+def final():
+    return 'Welcome to my final assignment!'
+
 
 
 
