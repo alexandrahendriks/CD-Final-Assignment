@@ -34,5 +34,5 @@ jobs:
           
           script: |
             cd ../home/CD
-            git clone git@github.com:alexandrahendriks/CD-Final-Assignment.git
+            git pull origin main
             echo "Deployment successful to Digital Ocean" 
