@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return 'Hello, world!'
 
+@app.route('/cow')
+def cow():
+    return 'MOoooOo!'
+
 @app.route('/final')
 def final():
     return 'Welcome to my final assignment!'
