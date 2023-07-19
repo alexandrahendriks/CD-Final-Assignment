@@ -1,5 +1,5 @@
 import unittest
-from main import index, final, cow
+from main import index, final, cow, passit
 
 
 class TestFunctions(unittest.TestCase):
@@ -9,3 +9,5 @@ class TestFunctions(unittest.TestCase):
         assert cow() == "MOoooOo!"
     def test_final(self):
         assert final() == "Welcome to my final assignment!"
+    def test_passit(self):
+        assert passit() == 'I hope I will pass for the first time ^^'

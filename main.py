@@ -17,6 +17,10 @@ def cow():
 def final():
     return 'Welcome to my final assignment!'
 
+@app.route('/pass')
+def passit():
+    return 'I hope I will pass for the first time ^^'
+
 
 
 
