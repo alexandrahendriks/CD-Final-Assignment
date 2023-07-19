@@ -18,3 +18,22 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run tests
         run: pytest
+        
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Deploy Flask CD App
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{secrets.SSH_HOST}} # IP adress of the server
+          key: ${{secrets.SSH_KEY}} # SSH private public key of the server
+          username: ${{secrets.SSH_USERNAME}} # User of the server
+          
+          script: |
+            cd ../home
+            mkdir CD
+            cd CD
+            git clone git@github.com:alexandrahendriks/CD-Final-Assignment.git
+            echo "Deployment successful to Digital Ocean"     
