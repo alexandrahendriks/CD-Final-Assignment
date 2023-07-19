@@ -1,5 +1,5 @@
 import unittest
-from main import index, cow, final
+from main import index, final
 
 
 class TestFunctions(unittest.TestCase):
