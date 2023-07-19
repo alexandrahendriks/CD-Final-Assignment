@@ -11,7 +11,7 @@ def index():
 
 @app.route('/cow')
 def cow():
-    return 'MOoooO!'
+    return 'MOoooOo!'
 
 
 
