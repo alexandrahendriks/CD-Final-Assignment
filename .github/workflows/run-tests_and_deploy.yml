@@ -33,8 +33,6 @@ jobs:
           username: ${{secrets.SSH_USERNAME}} # User of the server
           
           script: |
-            cd ../home
-            mkdir CD
-            cd CD
-            git clone git@github.com:M alexandrahendriks/CD-Final-Assignment.git
+            cd ../home/CD
+            git pull origin main
             echo "Deployment successful to Digital Ocean" 
